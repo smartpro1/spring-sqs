@@ -53,9 +53,9 @@ POST: http://localhost:8080/api/v1/message/send
 "serialNumber" : 44
 }
 
-# Polling happens through scheduler in the ConsumerServiceImpl class
-# You can see polled messages in your local console once the the scheduler's initial delay of 20s elapses
-# To see messages sent to sqs queues comment @EnableScheduling in SpringSqsApplication and re-run application
+- Polling happens through scheduler in the ConsumerServiceImpl class
+- You can see polled messages in your local console once the the scheduler's initial delay of 20s elapses
+- To see messages sent to sqs queues comment @EnableScheduling in SpringSqsApplication and re-run application
 
 # Delete Queue Request
 DELETE: http://localhost:8080/api/v1/queue/REPLACE_ME_WITH_QUEUE_NAME
